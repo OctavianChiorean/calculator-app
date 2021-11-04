@@ -1,0 +1,76 @@
+<div class="main-container" fxLayout="row" fxLayoutAlign="center center">
+    <div class="container-calculator">
+        <div class="input-display" fxLayout="row" fxLayoutAlign="end center">
+            <span class="input-text">{{displayValue}}</span>
+        </div>
+        <div fxLayout="column">
+            <div class="calculator-row" fxLayout="row" fxLayoutAlign="space-around center">
+                <div class="button" fxFlex="25" fxLayoutAlign="center center" (click)="clear()" >
+                    <span class="button-text">C</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center">
+                    <span class="button-text">±</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center">
+                    <span class="button-text">%</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center">
+                    <span class="button-text">÷</span>
+                </div>
+            </div>
+            <div class="calculator-row" fxLayout="row" fxLayoutAlign="space-around center">
+                <div class="button" fxFlex="25" fxLayoutAlign="center center" (click)="addCharactersToDisplayValue(digits.digit7)" >
+                    <span class="button-text">{{digits.digit7}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center"  (click)="addCharactersToDisplayValue(digits.digit8)">
+                    <span class="button-text">{{digits.digit8}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center"  (click)="addCharactersToDisplayValue(digits.digit9)">
+                    <span class="button-text">{{digits.digit9}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center">
+                    <span class="button-text">X</span>
+                </div>
+            </div>
+            <div class="calculator-row" fxLayout="row" fxLayoutAlign="space-around center" >
+                <div class="button" fxFlex="25" fxLayoutAlign="center center" (click)="addCharactersToDisplayValue(digits.digit4)">
+                    <span class="button-text">{{digits.digit4}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center" (click)="addCharactersToDisplayValue(digits.digit5)">
+                    <span class="button-text">{{digits.digit5}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center" (click)="addCharactersToDisplayValue(digits.digit6)">
+                    <span class="button-text">{{digits.digit6}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center">
+                    <span class="button-text">-</span>
+                </div>
+            </div>
+            <div class="calculator-row" fxLayout="row" fxLayoutAlign="space-around center">
+                <div class="button" fxFlex="25" fxLayoutAlign="center center" (click)="addCharactersToDisplayValue(digits.digit1)">
+                    <span class="button-text">{{digits.digit1}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center" (click)="addCharactersToDisplayValue(digits.digit2)">
+                    <span class="button-text">{{digits.digit2}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center" (click)="addCharactersToDisplayValue(digits.digit3)">
+                    <span class="button-text">{{digits.digit3}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center" (click)="add()">
+                    <span class="button-text">+</span>
+                </div>
+            </div>
+            <div class="calculator-row-1" fxLayout="row" fxLayoutAlign="space-around center">
+                <div class="button" fxFlex="50" fxLayoutAlign="center center" (click)="addCharactersToDisplayValue(digits.digit0)">
+                    <span class="button-text">{{digits.digit0}}</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center">
+                    <span class="button-text">,</span>
+                </div>
+                <div class="button button-border" fxFlex="25" fxLayoutAlign="center center">
+                    <span class="button-text">=</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
